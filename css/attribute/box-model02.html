@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* 전체선택자 모든 요소에 기본 세팅으로 적용*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /*
+            display
+            none: 표시 X (숨김)
+            block: 한줄 다 차지(가로줄), 사이즈 (width/height) 적용, 여백 적용
+            inline: 내용 (content)요소 사이즈만큼 차지, 같은 줄 앞에 나란히 배치, 사이즈 적용X 여백 가로 (좌/우 적용)
+            imnline-block: 자체적으로 block 처럼 작용(사이즈. 여백...)
+                                다른 요소들과의 상호 작용은 inline 취급 (나란히 배치 )*/
+
+        .box1{
+            /*display: none;*/
+
+            /* div tag 기본 block*/
+            display: block;
+        }
+
+        .box1 {
+            /* span tag 기본 inline */
+            display:block;
+
+            width:200px;
+            height:100px;
+            border:1px solid black;
+            margin:10px;
+            padding:10px;
+        }
+
+        .box1:hover{
+            display: inline-block;
+        }
+
+        .box2 {
+            /* span tag 기본 inline */
+            display:inline-block;
+
+            width:200px;
+            height:100px;
+            border:1px solid black;
+            margin:10px;
+            padding:10px;
+        }
+
+        .span1 {
+            /* span tag 기본 inline */
+            display:inline;
+
+            width:200px;
+            height:100px;
+            border:1px solid black;
+            margin:10px;
+            padding:10px;
+            
+            }
+
+        .parent {
+            width:200px;
+            height:100px;
+            color:blue;
+            border:1px solid blueviolet;
+
+            }
+        .child{
+            width:100px;
+            height:50px;
+            color:red;
+            border:1px solid violet;
+            display:none;
+        }
+
+        .parent:hover.child{ /* parent 클래스에 마우스가 올라간 경우 그의 자식 child 클래스 */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1">box</div>
+    <div class="box2">box</div>
+    <span class="span1">span</span>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem voluptates consectetur officiis iusto debitis sequi. Magnam expedita voluptas facilis voluptatum nesciunt, dolores iusto, numquam quas eius itaque quo, soluta atque.
+
+    <div class="parent">
+        부모
+        <div class="child">
+            자식
+        </div>
+    </div>
+
+</body>
+</html>
