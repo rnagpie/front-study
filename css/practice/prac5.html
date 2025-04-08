@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>/*
+    .container {
+        width: 500px;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    .top-row {
+        display: flex;
+    }
+
+    .red-box, .green-box {
+        width: 250px;
+        height: 100px;
+    }
+
+    .red-box {
+        background-color: red;
+    }
+
+    .green-box {
+        background-color: green;
+    }
+
+    .center-text {
+        margin: 10px 0;
+        font-weight: bold;
+    }
+
+    .blue-box {
+        width: 500px;
+        height: 200px;
+        background-color: blue;
+        margin-top: 10px;
+    }*/
+    </style>
+</head>
+<body>
+    <!--<div class="container">
+        <div class="top-row">
+        <div class="red-box"></div>
+        <div class="green-box"></div>
+    </div>
+
+    <div class="center-text">글자가운데정렬</div>
+
+        <div class="blue-box"></di>
+    </div>-->
+</body>
+</html>
+<!------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width:500px;
+            height: 500px;
+            /* border: 1px solid black; */
+            margin: 50px auto;
+            margin-bottom: 0;
+        }
+        /* inline-block 방식
+        .red-box{
+            width:250px;
+            height:100px;
+            background-color: red;
+            display: inline-block;
+        }
+        .green-box{
+            width:250px;
+            height:100px;
+            background-color: green;
+            display: inline-block;
+        }
+        .blue-box{
+            width:500px;
+            height:200px;
+            background-color: blue;
+        }
+        .container p{
+            text-align: center;
+        }
+        */
+
+        .red-box{
+            width:250px;
+            height:100px;
+            background-color: red;
+            float: left;
+        }
+        .green-box{
+            width:250px;
+            height:100px;
+            background-color: green;
+            float: left;
+        }
+        .blue-box{
+            width:100%px;
+            height:200px;
+            background-color: blue;
+        }
+        .main {
+            float:left;
+            width:100%;
+            height:25px;
+        }
+
+        .main p{
+            text-align: center;
+        }
+
+        /*float clear*/
+        .container {
+            content:"";
+            display:block;
+            clear:both;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="red-box">
+        </div><div class="green-box"></div>
+        <div>
+            <p>글자 가운데 정렬</p>
+        </div>
+        <div class="blue-box"></div>
+    </div>
+</body>
+</html>
