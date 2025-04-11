@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 400px;
+            height: 400px;
+            background-color:  antiquewhite;
+        }
+
+        h2{
+            color: red;
+        }
+
+        p{
+            font-weight: bold;
+        }
+        /*  
+            @media not prinr and (_ _ _) 
+            @media only screen and (_ _ _)
+            */
+        @media screen and (max-width: 768px){
+            /* style 속성 */
+            .box{
+            background-color: lightblue;
+            }
+        }
+
+        @media screen and (max-width: 480px){
+            .box{
+            background-color: hotpink;
+            }
+        
+            h2{
+                color:blue;
+            }
+
+            p{
+                font-weight: normal;
+                font-size: 18px;
+                font-style: oblique;
+            }
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>h2 tag</h2>
+        <p>p tag</p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem tempore debitis dolores itaque modi unde necessitatibus maxime. Repudiandae ipsum rerum reiciendis ex quibusdam, culpa nesciunt consequatur voluptates qui, libero eaque.
+
+
+    </div>
+</body>
+</html>
